@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file <stats.h> 
+ * @brief <Se definirán las funciones correspondientes y librerías >
  *
- * <Add Extended Description Here>
+ * <Se van a formar los prototipos de las funciones utilizadas y las librerías, además se van a agregar descripciones de las funciones en cuestión>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Maximiliano Martínez>
+ * @date <03 - octubre - 2024 >
  *
  */
 #ifndef __STATS_H__

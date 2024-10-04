@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file <stats.c> 
+ * @brief <Obtener parámetros estadísticos >
  *
- * <Add Extended Description Here>
+ * <Se obtendrá valor estadísticos como lo son la media, la mediana, el valor mínimo y el valor máximo de una base de datos>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Maximiliano Martínez>
+ * @date <03 - octubre - 2024 >
  *
  */
 
@@ -42,8 +42,11 @@ void main() {
   unsigned char valorMaximo;
 
   /* Statistics and Printing Functions Go Here */
+  printf("Elementos que contiene el arreglo: \n");
   print_array(test, SIZE);
   sort_array(test,SIZE);
+  printf("Elementos que contiene el arreglo ordenado de manera descendente: \n");
+  print_array(test,SIZE);
   media = find_mean(test, SIZE);
   mediana = find_median(test, SIZE);
   valorMinimo = find_minimum(test, SIZE);
@@ -66,8 +69,8 @@ void sort_array(unsigned char *arr,unsigned int length){
   }
 }
 
+
 void print_array(unsigned char *arr, unsigned int length){
-  printf("Elementos que contiene el arreglo \n");
   for(int i=0;i<length;i++){
     printf("%d, ", arr[i]);
   }
@@ -116,5 +119,8 @@ unsigned char find_maximum(unsigned char *arr, unsigned int length){
 }
 
 void print_statistics(unsigned char media ,unsigned char mediana, unsigned char valorMinimo, unsigned char valorMaximo){
-  printf("Media: %d\n Mediana: %d\n Valor Mínimo: %d\n Valor Máximo: %d\n", media, mediana, valorMinimo, valorMaximo);
+  printf("Media: %d\n", media);
+  printf("Mediana: %d\n", mediana);
+  printf("Valor Mínimo: %d\n", valorMinimo);
+  printf("Valor Máximo: %d\n", valorMaximo);
 }
